@@ -173,7 +173,8 @@
         <div class="content">
             <html><head></head><body><p>谷歌的 Material Design 设计语言已经有一段时间的历史了，作为安卓的官方规范，虽然在国内的应用情况惨不忍睹（对，就是说你们，BAT )，但谷歌自家应用无疑是这种设计的典范。其中一个重要的特性便是状态栏阴影，有无这一特性很大程度上决定了一个 App 的美观与否。<a id="more"></a></p>
 <p><img src="https://image-1300429317.cos.ap-beijing.myqcloud.com/%E9%98%B4%E5%BD%B1-Play%E5%95%86%E5%BA%97.png" alt><br><img src="https://image-1300429317.cos.ap-beijing.myqcloud.com/%E9%98%B4%E5%BD%B1-12306.png" alt="有无状态栏阴影的两个例子"></p>
-<p>有趣的是，作为谷歌一大应用的安卓端 Chrome 并未直接支持状态栏变色。站长曾对此很不理解，后来才得知 Chrome 将这一操作交给了网站开发者，只要在网页中添加一行代码就能给浏览器工具栏带来不同的色彩，同时也让状态栏蒙上一层好看的阴影。针对 WordPress 而言，打开“外观-编辑”页面，找到主题页眉 (header.php)，在文档开始部分的  与  之间任意一行插入以下代码：</p>
+<p>有趣的是，作为谷歌一大应用的安卓端 Chrome 并未直接支持状态栏变色。站长曾对此很不理解，后来才得知 Chrome 将这一操作交给了网站开发者，只要在网页中添加一行代码就能给浏览器工具栏带来不同的色彩，同时也让状态栏蒙上一层好看的阴影。针对 WordPress 而言，打开“外观-编辑”页面，找到主题页眉 (header.php)，在文档开始部分的  与 <link rel="alternate" href="/atom.xml" title="一只萌新" type="application/atom+xml">
+ 之间任意一行插入以下代码：</p>
 <p><code><meta name="theme-color" content="#??????"></code></p>
 <p>其中将六位通配符改成自己所需颜色的代码即可。颜色的查找推荐 App <a href="https://www.lanzous.com/i3285cf" target="_blank" rel="noopener">日本の伝統色</a>，这也是曾经在酷安上架的应用，由于开发者没有实名而下架，需要到网盘下载。</p>
 <p><img src="https://image-1300429317.cos.ap-beijing.myqcloud.com/%E8%90%8C%E6%96%B0%E5%8F%98%E8%89%B2%E5%89%8D.png" alt><br><img src="https://image-1300429317.cos.ap-beijing.myqcloud.com/%E8%90%8C%E6%96%B0%E5%8F%98%E8%89%B2%E5%90%8E.png" alt="变色前后的效果"></p>

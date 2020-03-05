@@ -171,7 +171,8 @@
             
         </h1>
         <div class="content">
-            <html><head></head><body><p>昨天一觉醒来收到了这封邮件：<a id="more"></a></p>
+            <html><head><link rel="alternate" href="/atom.xml" title="一只萌新" type="application/atom+xml">
+</head><body><p>昨天一觉醒来收到了这封邮件：<a id="more"></a></p>
 <p><img src="https://image-1300429317.cos.ap-beijing.myqcloud.com/%E5%AE%9E%E5%90%8D%E8%AE%A4%E8%AF%81%E9%80%9A%E7%9F%A5.png" alt></p>
 <p>自从今年初博客改为 Hexo 之后，一只萌新一直使用的是 Valine 评论系统，并配合 LeanCloud 的后端实现邮件提醒等功能。当时还由于原版 Valine 的评论管理太难用，使用了 valine-admin 来实现更好的功能。valine-admin 中可选的一个步骤是定时唤醒来及时通过邮件推送新评论通知，但要实现这一功能就需要向 LeanCloud 上传手持身份证照片做实名验证，因而站长就一直没采用这个功能，这几个月博客上的新评论通知完全随缘（<del>好在也没有评论</del>）。</p>
 <p>没想到还是没躲过越来越严格的网上实名制，现在也只能更改评论系统了。今天比较了一下使用的主题 Icarus 直接支持的几个评论系统，Disqus 尽管可能是最方便好用的，但是太丑，并且处于被墙状态，需要访问者拥有通畅的国际互联网连接，而本博客的读者大都没有这个习惯。又尝试了一下 LiveRe，设置倒是顺利，但不知为何在测试访问时永远也加载不出来，只能 pass。剩下的不用备案、站长能看懂怎么设置的就只剩 Gitment 和 Gitalk 了，前者的作者网站域名证书过期了一直没管，不知道是否弃坑，因而选择了后者。</p>

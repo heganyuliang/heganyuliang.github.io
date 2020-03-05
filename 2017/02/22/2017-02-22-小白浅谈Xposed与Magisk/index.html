@@ -171,7 +171,8 @@
             
         </h1>
         <div class="content">
-            <html><head></head><body><p>前一篇文章说要介绍 Magisk，想了想干脆把 Xposed 一起介绍了吧。</p>
+            <html><head><link rel="alternate" href="/atom.xml" title="一只萌新" type="application/atom+xml">
+</head><body><p>前一篇文章说要介绍 Magisk，想了想干脆把 Xposed 一起介绍了吧。</p>
 <p>Xposed 无疑是站长接触安卓以来见过的最强力的东西，曾经为了使用它而坚决不上 7.0（虽然后来还是叛变革命了）。Xposed 框架由 <a href="https://forum.xda-developers.com/showthread.php?t=3034811" target="_blank" rel="noopener">xda</a> 大神 rovo89 开发，通过替换安卓系统 /system/bin 目录下的文件，实现对系统某些功能的接管，进而给予基于 Xposed 框架开发的 app（Xposed 模块）更多权限。用户可以通过安装模块深度定制自己的安卓系统，实现诸如 qq、微信防撤回、为单独应用修改 dpi 或语言、强行阻止毒瘤常驻后台等功能。<a id="more"></a> 具体的实现原理萌新站长也不是很明白……感兴趣的读者还请自行搜索，反正我是没看懂（懵逼.jpg）。</p>
 <p>刷入 Xposed 的过程与之前介绍的刷入 Magisk 类似，都是先在第三方 rec 刷入 zip 包（卡刷，区别于刷第三方rec时的线刷）再安装启动器，不过需要注意的是 Xposed 框架不自带 root，需要先 root 后再刷。既然 Xposed 本身就会修改 /system，因此选择 root 也无须选择 systemless 模式，使用 SuperSu就好，最新版的 xda 链接<a href="https://forum.xda-developers.com/apps/supersu/2014-09-02-supersu-v2-05-t2868133" target="_blank" rel="noopener">在此</a>，如果对被收购后的版本不放心，也可以选择被收购前的<a href="https://download.chainfire.eu/969/SuperSU/" target="_blank" rel="noopener">最后一版 v2.76</a>。</p>
 <p>当然，这种深度介入系统的行为必然伴随着风险。装上Xposed框架后有时会面临着无法开机的情况，这个时候就需要卡刷卸载包了。话不多说，安装包和卸载包在这里下载：</p>
