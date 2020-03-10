@@ -19,7 +19,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://yizhimengxin.me/images/og_image.png">
 <meta property="article:published_time" content="2017-05-26T16:00:00.000Z">
-<meta property="article:modified_time" content="2019-12-23T13:29:44.000Z">
+<meta property="article:modified_time" content="2020-03-10T14:04:11.114Z">
 <meta property="article:author" content="河干鱼两">
 <meta property="article:tag" content="PC">
 <meta property="article:tag" content="Office">
@@ -159,7 +159,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    4 分钟 读完 (大约 553 个字)
+                    4 分钟 读完 (大约 554 个字)
                 </span>
                 
                 
@@ -174,9 +174,9 @@
         <div class="content">
             <html><head><link rel="alternate" href="/atom.xml" title="一只萌新" type="application/atom+xml">
 </head><body><p>众所周知，微软的 Office 每版更新不仅是界面的变化，内容格式也会随之改变。新版软件创建的文档的格式可能在旧版软件上无法正常显示，因此就有了兼容模式的存在，在这一模式下创建的文档会自动禁用旧版无法显示的格式。不过，新建一个文档时兼容模式默认应该是关闭的，而今天站长发现自己在新建文档时兼容模式打开了。虽然不会有大的影响，但是这对一向追求最新特性的站长来说十分别扭，因此搜索了一会，找到了如下的解决办法。<a id="more"></a></p>
-<p><img src="https://image-1300429317.cos.ap-beijing.myqcloud.com/Word%E6%A0%87%E9%A2%98.png" alt="就是这里，之前显示的是“文档 1[兼容模式]”，不过当时忘截图了"></p>
+<p><img src="https://img.yizhimengxin.me/Word%E6%A0%87%E9%A2%98.png" alt="就是这里，之前显示的是“文档 1[兼容模式]”，不过当时忘截图了"></p>
 <p>如果在之前安装过旧版的 Office 套件的话，程序会自动在 C:\Users\用户名\AppData\Roaming\Microsoft\Templates 目录下生成一个模板。而升级或卸载重装 Office 并不会删除该模板，因此无论通过何种方式升级后，创建新文档时程序都会默认套用该模板，导致出现兼容性问题。因此我们要做的就是删除该模板。</p>
-<p><img src="https://image-1300429317.cos.ap-beijing.myqcloud.com/Word%E6%97%A7%E6%A8%A1%E6%9D%BF.png" alt="旧模板"></p>
+<p><img src="https://img.yizhimengxin.me/Word%E6%97%A7%E6%A8%A1%E6%9D%BF.png" alt="旧模板"></p>
 <p>找到上图所示的 Normal.dotm 文件，将其删除，随后再重新打开 Word，程序会新建一个符合最新标准的模板，新文档上就再也没有恼人的兼容模式提示了！</p>
 <p>同时站长在搜索过程中看到过另一种关闭兼容模式的方法，但描述得不甚清晰，大约是面向专业人士的缘故。其看起来类似于修改注册表，但站长在注册表中没能找到它说的路径，故在此就不赘述，给出<a href="http://getadmx.com/?Category=Office2016&Policy=word16.Office.Microsoft.Policies.Windows%3A%3AL_SetDefaultCompatibilityModeOnFileCreation&Language=zh-cn" target="_blank" rel="noopener">网址</a>，感兴趣的朋友还请自行研究。</p>
 </body></html>

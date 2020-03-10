@@ -19,7 +19,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://yizhimengxin.me/images/og_image.png">
 <meta property="article:published_time" content="2019-02-23T16:00:00.000Z">
-<meta property="article:modified_time" content="2019-11-25T09:08:12.000Z">
+<meta property="article:modified_time" content="2020-03-10T13:52:08.947Z">
 <meta property="article:author" content="河干鱼两">
 <meta property="article:tag" content="PC">
 <meta property="article:tag" content="软件">
@@ -159,7 +159,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    10 分钟 读完 (大约 1443 个字)
+                    10 分钟 读完 (大约 1449 个字)
                 </span>
                 
                 
@@ -175,15 +175,15 @@
             <html><head><link rel="alternate" href="/atom.xml" title="一只萌新" type="application/atom+xml">
 </head><body><p>一个典型中国现代城市青年的一天可能是这样的：早晨醒来第一件事先刷刷微博/即刻等信息流 App，通勤路上再浏览一些微信公众号，坐定之后（有志青年）还会打开传统新闻网站/App 查看当日新闻。而有了 RSS，所有这些信息都可在一处解决（最多电脑+手机两处）。<a id="more"></a></p>
 <p>RSS（Really Simple Syndication，简易信息聚合）是一种消息来源格式规范，用以聚合经常发布更新数据的网站，例如博客文章、新闻等。它不是一个网站或一个 App，而是一种规范，只要有足够多的内容提供者按照这种规范提供自己的内容，获取者就能在<strong>一处</strong>获得自己需要的<strong>所有</strong>信息。</p>
-<p><img src="https://image-1300429317.cos.ap-beijing.myqcloud.com/%E7%AB%99%E9%95%BF%E7%9A%84%E8%AE%A2%E9%98%85.png" alt="站长的订阅"></p>
+<p><img src="https://img.yizhimengxin.me/%E7%AB%99%E9%95%BF%E7%9A%84%E8%AE%A2%E9%98%85.png" alt="站长的订阅"></p>
 <p>从上面说明可以看出，RSS 是用户在本地直接获取到网络上各种内容，这样对用户是方便了，但对内容提供者而言就意味着流量损失。用户都不上你的网站/用你的 App 了，广告收入必然下降很多，因此许多内容提供者并不会提供 RSS 订阅链接。这时就需要请出 <a href="https://docs.rsshub.app/" target="_blank" rel="noopener">RSSHub</a> 了，它『是一个轻量、易于扩展的 RSS 生成器，可以给任何奇奇怪怪的内容生成 RSS 订阅源』。它可以部署在 Windows、macOS 和 Linux 上，也就是一般的个人电脑或 VPS 等设备均可。如果嫌麻烦/没有编程常识，也可以使用 RSSHub 本身提供的链接。不过多人使用同一服务可能被内容提供者针对性限制，并且 RSSHub 官方也从未保证其服务的可用性，所以在可能的情况下还是尽量部署到自己的设备上比较好。</p>
 <p>至于如何生成自己需要的链接，RSSHub 的说明已经非常详尽了，并且这一步不需要任何编程常识，人人都能会，所以站长也不细说。此外，RSSHub 也不是获取 RSS 链接的唯一途径，许多网站自行提供了 RSS 链接。不过，这些链接通常只提供了文章的标题和摘要，浏览之后若感兴趣还需要跳转到原网站继续阅读（还是为了引流）。如果嫌麻烦，可以自行查找 RSS 摘要转全文的方法，或是在 RSSHub 寻找是否有自己需要的内容，因为这上面的基本都是全文链接。</p>
 <p>总之，假设你已经取得了自己需要内容的链接，随意打开一个，绝大部分的格式都是这样：</p>
-<p><img src="https://image-1300429317.cos.ap-beijing.myqcloud.com/NewYorkTimes%E5%AE%98%E6%96%B9RSS.png" alt="New York Times 官方 RSS"></p>
+<p><img src="https://img.yizhimengxin.me/NewYorkTimes%E5%AE%98%E6%96%B9RSS.png" alt="New York Times 官方 RSS"></p>
 <p>因为 RSS 需要通过纯文字实现排版，故在内容中混杂有大量的排版信息，无法直接阅读，因而我们需要一个 RSS 阅读器。这方面的推荐网上林林总总有很多，站长在这里推荐的是一个相对小众的 UWP 应用——Newsflow。</p>
 <p>作为 UWP 应用，Newsflow 的设计简洁明了，对触屏支持良好，并且能够利用 Windows 原生通知及时推送重要信息，对中轻度用户来说功能也足够用，因而站长选择了它而非全面而庞大的 Feedly 等阅读器。</p>
 <p>使用之前首先需要添加订阅源。点击左下方的地球图标或使用快捷键 Alt+U 打开订阅源页面，在右上角选择『添加』，输入之前获取的链接后回车，搜索到内容后点击进入预览。Newsflow 提供了标题、卡片、杂志和文章四种视图，后三者都会加载文章中的图片，故建议所有地方都选择标题视图以加速加载。若订阅源满足需要，则点击右上角的『添加』，在接下来的页面可以自定义标题、描述、分类、通知等，尤其是通知部分，可以根据该订阅源的重要和紧急程度自定义通知方式，避免被不停弹出的消息过度打扰或者错过需要第一时间了解的内容。</p>
-<p><img src="https://image-1300429317.cos.ap-beijing.myqcloud.com/%E6%A0%87%E9%A2%98%E8%A7%86%E5%9B%BE%E4%B8%8B%E7%9A%84NewYorkTimes.png" alt="标题视图下的 New York Times"></p>
+<p><img src="https://img.yizhimengxin.me/%E6%A0%87%E9%A2%98%E8%A7%86%E5%9B%BE%E4%B8%8B%E7%9A%84NewYorkTimes.png" alt="标题视图下的 New York Times"></p>
 <p>适当的通知——这也是 RSS 的精髓所在。生活在信息爆炸的当下，很多人都曾被手机里充斥的各种通知弄得焦头烂额，而 RSS 就像一种宣誓夺回获取信息自主权的宣言。用户自己决定在什么时间看什么内容，拒绝被商业公司无休止的『推荐』所绑架。此外，无处不在的『人工智能』和『算法』让我们能看到的东西越来越符合自己的口味，换句话说也就是眼界越来越被限制。而 RSS 只要在一开始订阅不同的内容，就始终能听见不同的声音。这在一个民粹化的时代，意义不言而喻。</p>
 <p>要获取一只萌新的 RSS，请单击顶部菜单！</p>
 </body></html>
