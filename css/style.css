@@ -10237,6 +10237,12 @@ fieldset[disabled] .select select:hover {
   background-color: #fff;
   padding: 3rem 1.5rem 6rem;
 }
+html {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
 .ml-0,
 .mx-0 {
   margin-left: 0 !important;
@@ -10740,10 +10746,8 @@ article.article .article-meta {
   margin-bottom: 0.5rem;
 }
 article.article .content {
-  font-size: 1.1rem;
-}
-article.article .content a {
   word-wrap: break-word;
+  font-size: 1.1rem;
 }
 article.article .content h1 {
   font-size: 1.75em;
@@ -11322,17 +11326,18 @@ figure.highlight .section {
   }
 }
 @media screen and (min-width: 769px), print {
+  .is-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1.5rem;
+    z-index: 99;
+  }
   .column-main.is-sticky,
   .column-left.is-sticky,
   .column-right.is-sticky,
   .column-right-shadow.is-sticky {
-    align-self: flex-start;
-    position: -webkit-sticky;
-    position: sticky;
     top: 0.75rem;
-  }
-  .column-right-shadow.is-sticky {
-    top: 1.5rem;
+    align-self: flex-start;
   }
 }
 @media screen and (max-width: 768px) {
