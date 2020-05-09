@@ -4,7 +4,7 @@
 <p>之前考虑过许多次买不买 Kindle，每次都是觉得更喜欢纸质书翻页的感觉而尤其讨厌 Kindle 的闪屏，故而一次次否决了自己。不过这次突然觉得拿着一个 200 g 的屏幕看各式各样的书体验着实很好，加上听说 Paperwhite 3 RAM 比同学的大了一倍，翻页闪屏已几乎不再影响观感，因此一念之间买下。<a id="more"></a></p>
 <p>到手后几番尝试，感觉十分良好。虽然受制于性能，操作流畅性无法与习惯了的手机相比，但是也远高于预期。尤其是翻页时，极少出现不讨喜的全屏反色刷新，阅读流畅性得到了保证。同时，整个系统的生态环境也十分完善。在电脑上通过亚马逊网站下单一本书，拿起 Kindle 就能阅读，或许 iOS/OS X 的生态也不过如此（想起当年用过的 Lumia 526，可惜低端机在 Win 10 Mobile 上表现太糟糕，和电脑的互动并不好）。</p>
 <p>周三到货之后，先后买了《中国通史》，《基督山伯爵》和《安娜·卡列尼娜》，都是想看而没有那么想看的书（其实就是没钱）。躺在床上看译林周克希先生版的《基督山伯爵》时，我突然意识到另一件事，那就是电子书实在节约空间。看看我现在书架的样子，是绝对放不下它的纸质版的——足足有 1305 页，1.9 kg 重。能手持一块薄薄的屏幕半躺在床上看书，生活堪谓满足。</p>
-<p><img src="https://img.yizhimengxin.me/%E4%B9%A6%E6%9E%B6.jpg" alt="有好多还没看的书啊……"></p>
+<p><img loading="lazy" src="https://img.yizhimengxin.me/%E4%B9%A6%E6%9E%B6.jpg" alt="有好多还没看的书啊……"></p>
 <p>感谢去年某同学送的茶，让不到 9 点就犯困的我撑到了 11 点过。恍惚间又是一年过去了，去年 6 月 9 号口语考完出学校时的瓢泼大雨仿佛还在眼前下着，怎么就整整一年了呢。一年间自己经历了什么，收获了什么呢？此时此刻耳机里正是斯美塔那的伏尔塔瓦河，壮阔的音乐阻止我思考。或许纯粹的美就够了。终有一日我会去到波希米亚的那条大河边，凭栏远望，或许想很多，或许什么都不想。存在先于本质，l’existence précède l’essence，多么迷人的话。在理性不能解决问题的时候，不妨就感受生活，感受单纯的美吧。</p>
 <p>这篇博客没有什么目的，权当作是一个不想做作业而又闲得无聊的人的深夜瞎扯，诸位看看也罢。</p>
 </div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2017/06/26/2017-06-26-%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E4%BD%BFAndroid%E7%AB%AFChrome%E7%8A%B6%E6%80%81%E6%A0%8F%E5%8F%98%E8%89%B2/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">一行代码使 Android 端 Chrome 状态栏变色</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2017/05/27/2017-05-27-Office%202016%E6%96%B0%E5%BB%BA%E6%96%87%E6%A1%A3%E6%98%BE%E7%A4%BA%E2%80%9C%E5%85%BC%E5%AE%B9%E6%A8%A1%E5%BC%8F%E2%80%9D%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"><span class="level-item">Office 2016 新建文档显示“兼容模式”解决办法</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><div class="content" id="valine-thread"></div><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js"></script><script>new Valine({
@@ -44,4 +44,16 @@
             }
         });</script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
             loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
-        });</script></body></html>
+        });</script><script>
+    if(!('loading' in HTMLImageElement.prototype)) {
+        const srp = document.createElement('script');
+        srp.src = 'https://cdn.jsdelivr.net/npm/lazysizes@5.1.1/lazysizes.min.js';
+        document.body.append(srp);
+        const imgs = document.querySelectorAll('img');
+        imgs.forEach(el => {
+            el.setAttribute('data-src', el.getAttribute('src'));
+            el.removeAttribute('src');
+            el.classList.add('lazyload');
+    })
+}
+</script></body></html>

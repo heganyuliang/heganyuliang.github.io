@@ -3,10 +3,10 @@
 </head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.png" alt="一只萌新" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">主页</a><a class="navbar-item" href="/archives">归档</a><a class="navbar-item" href="/categories">分类</a><a class="navbar-item" href="/atom.xml">RSS</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="网盘" href="https://yizhimengxin.me/fodi"><i class="fas fa-cloud"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2018-10-02T16:00:00.000Z" title="2018-10-02T16:00:00.000Z">2018-10-03</time><span class="level-item"><a class="link-muted" href="/categories/%E6%90%9E%E6%9C%BA/">搞机</a></span><span class="level-item">12 分钟 读完 (大约 1827 个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">Telegram 专用轻量级代理——MTProxy</h1><div class="content"><p>Telegram 是一款跨平台即时通讯软件，目前已覆盖移动端（Android、iOS、Windows Phone、Firefox OS）、桌面（Windows、macOS、Linux）和网页全平台，甚至还有 Chrome 扩展（说实话，这是我见过覆盖最全的软件……），其主打特点是安全和隐私，防范的对象包括各国政府和商业公司两方面。<a id="more"></a> 由于创始人杜洛夫兄弟的个人经历和信仰，Telegram 不仅拒绝政府的监控，甚至号称不以盈利为目标、因而不接受商业机构的投资和收购。目前，Telegram 主要资金来源仍然是帕维尔·杜洛夫的个人注资，因此其独立性和安全性仍然值得信赖。事实上，正是由于 Telegram 太过安全，使其一度成为 IS 恐怖分子的联络工具，迫使 Telegram 官方封禁了上百个涉及恐怖主义的群组。恐怖分子为 Telegram 的安全性实力代言啊。</p>
 <p>众所周知，这种不受监控的互联网服务在墙内通常是无法正常使用的。传统的办法是使用普通的代理工具，不过这对本身没有越墙需求的用户来说不太友好。为了使用一个软件而频繁开关另一个软件，加大了 Telegram 的使用成本，这也是阻碍其在国内推广的一个重要因素。不过，今年 4 月俄罗斯政府也封禁了 Telegram，而 5 月其官方就推出了这篇文章的主角——MTProxy，可以看作是 Telegram 为应对政府的封禁而主动提供的应对方法。至于创始人杜洛夫兄弟秘♂闻、Telegram 界面和操作方法等内容，本文就不介绍了，网上一搜一大把。<del>如果你实在懒得搜</del>也可以参考<a href="https://sspai.com/post/28068">少数派</a>、<a href="https://www.ifanr.com/504427">爱范儿</a>和<a href="https://livc.io/blog/177">这篇博客</a>，对其有一个基本的了解。</p>
 <h2 id="MTProxy-设置"><a href="#MTProxy-设置" class="headerlink" title="MTProxy 设置"></a>MTProxy 设置</h2><p>今年 5 月之后更新的 Telegram 版本，包括站长拥有的 Android、iOS 和 Windows 端都已经内置了这一代理工具。具体实现原理我们无需关心，只要知道怎么设置即可。以安卓客户端为例，打开『设置——数据和存储——代理设置』，点击添加代理，选择 MTProto 代理，填入服务器、端口和密钥信息。随后返回上一级页面，打开使用代理服务器开关即可。</p>
-<p><img src="https://img.yizhimengxin.me/%E4%BB%A3%E7%90%86%E8%AE%BE%E7%BD%AE.jpg" alt="代理设置"></p>
+<p><img loading="lazy" src="https://img.yizhimengxin.me/%E4%BB%A3%E7%90%86%E8%AE%BE%E7%BD%AE.jpg" alt="代理设置"></p>
 <p>不过，略微麻烦的是，Telegram 在登录之前无法进行设置，而若没有可用的代理则又不能登录。因此，在操作之前还是需要自备一个代理软件，要求就很随意了，限速限流量都没有关系，只要登录 Telegram 之后便可抛弃。</p>
 <h2 id="自行搭建代理服务"><a href="#自行搭建代理服务" class="headerlink" title="自行搭建代理服务"></a>自行搭建代理服务</h2><p>道理我都懂，那么服务器信息要从哪来呢？这里就要用上我们之前薅到手的 Vultr 羊毛了。首先要知道，一切代理服务的本质就是用户访问境外没有被墙的服务器，由服务器代用户访问被墙的服务并返回数据。因此，首先我们需要一台境外服务器（严格来说，我们即将使用的 VPS 和独立服务器并不是一回事，但作用相同）。</p>
-<p><img src="https://img.yizhimengxin.me/%E8%B6%8A%E5%A2%99%E5%8E%9F%E7%90%86.png" alt="越墙原理"></p>
+<p><img loading="lazy" src="https://img.yizhimengxin.me/%E8%B6%8A%E5%A2%99%E5%8E%9F%E7%90%86.png" alt="越墙原理"></p>
 <p>打开 Vultr，点击右上角的『+』号添加 VPS，以下序号对应添加界面的序号：</p>
 <ol>
 <li>地区：从国内访问，东京、新加坡或者美西几个城市都是不错的选择；</li>
@@ -15,7 +15,7 @@
 <li>若非选择 2.5 美元的规格，同时也有 ipv6 需要的话，务必勾选『Enable IPv6』。</li>
 </ol>
 <p>5、6、7 三步留空即可。点击『Deploy Now』。</p>
-<p><img src="https://img.yizhimengxin.me/Vultr%E9%80%89%E6%8B%A9.jpg" alt="如果不知道如何选择，直接照我选的就好"></p>
+<p><img loading="lazy" src="https://img.yizhimengxin.me/Vultr%E9%80%89%E6%8B%A9.jpg" alt="如果不知道如何选择，直接照我选的就好"></p>
 <p>稍等片刻，等 VPS 部署成功之后，便可以进行搭建服务的操作了。首先，我们需要连接到 VPS 上。Windows 端可使用 Putty 或 Xshell（教育用户可免费使用，并且不需要教育网邮箱或学生证），Mac 端直接使用 terminal 即可。以 xshell 为例，点击左上方的新建会话按钮，在主机一栏填入 VPS 的 IP地址，弹出的安全警告中选择『接受并保存』，输入用户名『root』和密码，之后便成功连接了。</p>
 <p><em>以下内容基本来自逗比根据地的<a href="https://doub.io/shell-jc7/">这篇文章</a>，建议有越墙能力的读者直接访问，更为详尽。</em></p>
 <p><em>或者修改 hosts 文件，在末尾填上一行<code>104.16.248.1 doub.io</code>，之后访问<a href="https://doub.io/">https://doub.io</a></em></p>
@@ -23,7 +23,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -N --no-check-certificate https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;ToyoDAdoubi&#x2F;doubi&#x2F;master&#x2F;mtproxy.sh &amp;&amp; chmod +x mtproxy.sh &amp;&amp; bash mtproxy.sh</span><br></pre></td></tr></table></figure>
 
 <p>运行后出现菜单，选择『1』安装。随后的端口可在提示范围内随意输入，建议输入 10000 以上的数字。之后的步骤都听从脚本的建议，一路回车并等候安装，直至出现这个界面：</p>
-<p><img src="https://img.yizhimengxin.me/%E6%88%90%E5%8A%9F%E7%95%8C%E9%9D%A2.png" alt=""></p>
+<p><img loading="lazy" src="https://img.yizhimengxin.me/%E6%88%90%E5%8A%9F%E7%95%8C%E9%9D%A2.png" alt=""></p>
 <p>恭喜你！你已经成功安装好了自己的 MTProxy 服务，接下来只要复制第一行链接（其实使用第二行链接应该更为简便，但是不知道为什么我这里一直无法成功）并发送到 Telegram 里任意一个对话（如『保存的消息』，这样就只有自己能看到，不会影响别人），点击之后便可自动添加并开启代理。接下来便可以关闭其他的代理软件，把 Telegram 当微信使用了！</p>
 <p><del>这里也提供我自己刚刚搭建的 MTProxy，可用时间为一周或者直到 IP 被封。<code>tg://proxy?server=66.42.109.48&amp;port=23424&amp;secret=dd64a3c3f7442a3b36b371a9e135db2a0d</code>如果你的 VPS IP 被封了（可以使用<a href="https://www.toolsdaquan.com/ipcheck/">这个网站</a>检测，国内 ICMP 和/或 TCP 结果失败即表示被封），直接销毁后重新部署一台即可。</del> </p>
 <p>另外，<a href="https://doubibackup.com/">逗比根据地</a>还提供了 bbr 等优化 VPS 的一键脚本，有能力访问的读者可以多加查阅，这是一个非常有用的网站。</p>
@@ -64,4 +64,16 @@
             }
         });</script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
             loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
-        });</script></body></html>
+        });</script><script>
+    if(!('loading' in HTMLImageElement.prototype)) {
+        const srp = document.createElement('script');
+        srp.src = 'https://cdn.jsdelivr.net/npm/lazysizes@5.1.1/lazysizes.min.js';
+        document.body.append(srp);
+        const imgs = document.querySelectorAll('img');
+        imgs.forEach(el => {
+            el.setAttribute('data-src', el.getAttribute('src'));
+            el.removeAttribute('src');
+            el.classList.add('lazyload');
+    })
+}
+</script></body></html>
