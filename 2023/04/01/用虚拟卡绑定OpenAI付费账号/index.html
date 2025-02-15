@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>用虚拟卡绑定 OpenAI 付费账号 - 一只萌新</title><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#B6C7E3"><meta name="application-name" content="一只萌新"><meta name="msapplication-TileImage" content="/img/icon.svg"><meta name="msapplication-TileColor" content="#B6C7E3"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="一只萌新"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="apple-touch-icon" sizes="144x144" href="/img/icon.svg"><meta name="description" content="ChatGPT 或者说 AI 火了之后，基于 OpenAI API的应用层出不穷，从套壳 ChatGPT 网页到一键翻译一键总结一键作图一键写代码，主打一个解放生产力（可能物理）。这些应用一般需要绑定自己的 API key、消耗自己的使用额度，新注册账号有限时的 5 美元额度，如果用完或者过期了，就需要绑定银行卡付费才能用。OpenAI 不给中国提供服务，中国发行的银行卡一概不能用，因此本文就介绍"><meta property="og:type" content="blog"><meta property="og:title" content="用虚拟卡绑定 OpenAI 付费账号"><meta property="og:url" content="https://yizhimengxin.me/2023/04/01/%E7%94%A8%E8%99%9A%E6%8B%9F%E5%8D%A1%E7%BB%91%E5%AE%9AOpenAI%E4%BB%98%E8%B4%B9%E8%B4%A6%E5%8F%B7/"><meta property="og:site_name" content="一只萌新"><meta property="og:description" content="ChatGPT 或者说 AI 火了之后，基于 OpenAI API的应用层出不穷，从套壳 ChatGPT 网页到一键翻译一键总结一键作图一键写代码，主打一个解放生产力（可能物理）。这些应用一般需要绑定自己的 API key、消耗自己的使用额度，新注册账号有限时的 5 美元额度，如果用完或者过期了，就需要绑定银行卡付费才能用。OpenAI 不给中国提供服务，中国发行的银行卡一概不能用，因此本文就介绍"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://yizhimengxin.me/2023/04/01/%E7%94%A8%E8%99%9A%E6%8B%9F%E5%8D%A1%E7%BB%91%E5%AE%9AOpenAI%E4%BB%98%E8%B4%B9%E8%B4%A6%E5%8F%B7/%E8%B4%A7%E5%B8%81%E7%9A%84%E6%97%85%E7%A8%8B.svg"><meta property="article:published_time" content="2023-03-31T16:00:00.000Z"><meta property="article:modified_time" content="2023-04-05T16:11:21.463Z"><meta property="article:author" content="河干鱼两"><meta property="article:tag" content="教程"><meta property="article:tag" content="网络"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://yizhimengxin.me/2023/04/01/%E7%94%A8%E8%99%9A%E6%8B%9F%E5%8D%A1%E7%BB%91%E5%AE%9AOpenAI%E4%BB%98%E8%B4%B9%E8%B4%A6%E5%8F%B7/%E8%B4%A7%E5%B8%81%E7%9A%84%E6%97%85%E7%A8%8B.svg"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://yizhimengxin.me/2023/04/01/%E7%94%A8%E8%99%9A%E6%8B%9F%E5%8D%A1%E7%BB%91%E5%AE%9AOpenAI%E4%BB%98%E8%B4%B9%E8%B4%A6%E5%8F%B7/"},"headline":"用虚拟卡绑定 OpenAI 付费账号","image":[],"datePublished":"2023-03-31T16:00:00.000Z","dateModified":"2023-04-05T16:11:21.463Z","author":{"@type":"Person","name":"河干鱼两"},"publisher":{"@type":"Organization","name":"一只萌新","logo":{"@type":"ImageObject","url":"https://yizhimengxin.me/img/logo.svg"}},"description":"ChatGPT 或者说 AI 火了之后，基于 OpenAI API的应用层出不穷，从套壳 ChatGPT 网页到一键翻译一键总结一键作图一键写代码，主打一个解放生产力（可能物理）。这些应用一般需要绑定自己的 API key、消耗自己的使用额度，新注册账号有限时的 5 美元额度，如果用完或者过期了，就需要绑定银行卡付费才能用。OpenAI 不给中国提供服务，中国发行的银行卡一概不能用，因此本文就介绍"}</script><link rel="canonical" href="https://yizhimengxin.me/2023/04/01/%E7%94%A8%E8%99%9A%E6%8B%9F%E5%8D%A1%E7%BB%91%E5%AE%9AOpenAI%E4%BB%98%E8%B4%B9%E8%B4%A6%E5%8F%B7/"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/5.15.4/css/all.min.css"><link data-pjax rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/highlight.js/11.7.0/styles/atom-one-light.min.css"><link rel="stylesheet" href="https://lib.baomitu.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link data-pjax rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/cookieconsent/3.1.1/cookieconsent.min.css"><link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/lightgallery/1.10.0/css/lightgallery.min.css"><link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/justifiedGallery/3.8.1/css/justifiedGallery.min.css"><!--!--><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://s4.zstatic.net/ajax/libs/pace/1.2.4/pace.min.js"></script><!--!--><!--!--><meta name="follow.it-verification-code" content="ahzrUPe2lkKjqkw24stH"><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="一只萌新" type="application/atom+xml">
+</head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="一只萌新" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">主页</a><a class="navbar-item" href="/archives">归档</a><a class="navbar-item" href="/categories">分类</a><a class="navbar-item" href="/about">关于</a><a class="navbar-item" href="/atom.xml">RSS</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="萌新云" href="https://pan.yizhimengxin.me"><i class="fas fa-cloud"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2023-03-31T16:00:00.000Z" title="2023/4/1 00:00:00">2023-04-01</time>发表</span><span class="level-item"><time dateTime="2023-04-05T16:11:21.463Z" title="2023/4/6 00:11:21">2023-04-06</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E6%90%9E%E6%9C%BA/">搞机</a></span><span class="level-item">12 分钟读完 (大约1862个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">用虚拟卡绑定 OpenAI 付费账号</h1><div class="content"><p>ChatGPT 或者说 AI 火了之后，基于 OpenAI API的应用层出不穷，从套壳 ChatGPT 网页到一键翻译一键总结一键作图一键写代码，主打一个解放生产力（可能物理）。这些应用一般需要绑定自己的 API key、消耗自己的使用额度，新注册账号有限时的 5 美元额度，如果用完或者过期了，就需要绑定银行卡付费才能用。OpenAI 不给中国提供服务，中国发行的银行卡一概不能用，因此本文就介绍一下申请 Depay 虚拟卡来绑定的过程。<span id="more"></span></p>
+<h2 id="注册-Depay-账号"><a href="#注册-Depay-账号" class="headerlink" title="注册 Depay 账号"></a>注册 Depay 账号</h2><p>Depay 成立于2021年，是一家为个人提供处理加密货币方式的企业，属于海外国人商家。币圈毕竟还是相对小众，等 ChatGPT 流行之后 Depay 才跟着火了一把，作为门槛最低的虚拟卡之一，几乎所有介绍在中国给 OpenAI 付费的教程都会提到它。</p>
+<p>在 <a target="_blank" rel="noopener" href="https://depay.depay.one/zh-cn/index.html">Depay 的网站</a>能够查看一些基本信息，注册的话可以下载 App（Android 直接下载 APK，iOS 需要非国区 ID），也可以直接<a target="_blank" rel="noopener" href="https://depay.depay.one/web-app/register-h5">网页注册</a>，愿意的话可以填我的邀请码 <code>349564</code>。若是网页注册，完成后也需要下载 App 才能进行后续操作。</p>
+<h2 id="开卡和充值"><a href="#开卡和充值" class="headerlink" title="开卡和充值"></a>开卡和充值</h2><h3 id="选择什么卡"><a href="#选择什么卡" class="headerlink" title="选择什么卡"></a>选择什么卡</h3><p>首先要说明的是，Depay 提供的是类似于借记卡的预付卡，需要先充值再消费，以下提到的“额度”指的是单月消费额度而非信用额度。</p>
+<p>注册成功后并不会直接发放一张卡，而是还需要手动申请。打开 Depay 的 App 首页就是申请页面，目前可选的卡组织只有 MasterCard，级别包括从 Lite 到黑金五类。Lite 卡和普通卡最大的区别是，前者不需要 KYC（know your customer）实名认证，后者需要。除此之外，各级别还存在开卡费、月费、手续费等不同。</p>
+<table>
+<thead>
+<tr>
+<th align="center">级别</th>
+<th align="center">开卡费</th>
+<th align="center">月费</th>
+<th align="center">额度</th>
+<th align="center">充值费用</th>
+<th align="center">KYC</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Lite</td>
+<td align="center">10 USDT</td>
+<td align="center">2 USD</td>
+<td align="center">20,000 USD&#x2F;月</td>
+<td align="center">2% (Min 1 USD)</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td align="center">标准</td>
+<td align="center">0 USDT</td>
+<td align="center">1 USD</td>
+<td align="center">20,000 USD&#x2F;月</td>
+<td align="center">1.35%</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td align="center">高级</td>
+<td align="center">10 USDT</td>
+<td align="center">0.5 USD</td>
+<td align="center">50,000 USD&#x2F;月</td>
+<td align="center">1.20%</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td align="center">白金</td>
+<td align="center">50 USDT</td>
+<td align="center">0 USD</td>
+<td align="center">200,000 USD&#x2F;月</td>
+<td align="center">1.00%</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td align="center">黑金</td>
+<td align="center">活动空投</td>
+<td align="center">0 USD</td>
+<td align="center">无限额</td>
+<td align="center">0.80%</td>
+<td align="center">Yes</td>
+</tr>
+</tbody></table>
+<p>就中国国籍的用户而言，KYC 认证需要上传身份证并录一段人脸短视频。是否愿意把这种程度的隐私信息交给别人、尤其是海外国人商家，取决于各自的意愿，反正我开的是 Lite 卡。但无论如何申请时姓名要填写真实，以便在遇到风控时有申诉的基础。另外，</p>
+<ol>
+<li>开了 Lite 卡之后如果进行 KYC 认证，会自动转变为高级卡；</li>
+<li>开卡费必须用 USDT 支付，USD 不行（你可以猜到我发生了什么）。</li>
+</ol>
+<h3 id="买，提，兑，充"><a href="#买，提，兑，充" class="headerlink" title="买，提，兑，充"></a>买，提，兑，充</h3><p>作为“一家致力于为个人解决加密货币多场景应用的企业”，Depay 不忘初心，交开卡费或者为卡充值都需要使用 USDT，并且需要多次转账和兑换（也就是吃多次损耗）。我是矿难后才第一次接触加密货币的古墓派，对币圈毫无所知，只会按照教程一步步操作：</p>
+<p>买：用法币买加密货币。注册一个交易平台，比如我用的<a target="_blank" rel="noopener" href="https://www.okx.com/cn">欧易</a>，支持银联微信支付宝。点击<code>买币-快捷买币</code>，然后输入需要的 USDT 数量（由于各种手续费和损耗，第一次充值金额建议比预计所需花费多一点。比如想用标准卡开 20 刀的 ChatGPT Plus，可以先买个 23-25 USDT），然后按交易平台的提示操作，付款后几分钟内到账。**但是！**平台普遍会限制新注册用户的交易，在欧易购买 USDT 后要等24小时才能转出。</p>
+<p>提：把 USDT 从欧易提取到 Depay 钱包。打开 Depay App 里<code>钱包-USDT-充币</code>，选择一个主网，记下充值地址。在欧易中点击<code>资产管理-提币</code>，币种选择USDT，方式为链上提现，输入自己 Depay 钱包的充值地址，<strong>提现网络一定要选择 Depay 里选择的主网</strong>，否则你的钱就蒸发到虚空了。确认好地址、网络和数量之后提交，一般 10 分钟以内会在 Depay 里到账。</p>
+<p>兑：把 Depay 钱包里的 USDT 转换为 USD。Depay App 选择<code>钱包-实时兑换</code>，把你需要数量的 USDT 兑换成 USD。虽然理论上这二者应该等价，但无论是用哪个换另一个都会有汇率损失。所以当你需要开通有开卡费的卡时切记不要一股脑全部换完，否则又需要再把对应数量的 USDT 换回来。</p>
+<p>充：把 Depay 钱包里的 USD 充进卡里。终于来到了最后一步，上一步兑换完成后确认页面就有一键充值，没注意关闭了也不要紧，在首页点<code>充值</code>也可以，最低 5 USD 起充。充值好后，这张卡片才算真正激活，能够直接看到卡号、持卡人姓名和过期时间，通过邮箱验证码可以查看 CVV。</p>
+<p><img src="/2023/04/01/%E7%94%A8%E8%99%9A%E6%8B%9F%E5%8D%A1%E7%BB%91%E5%AE%9AOpenAI%E4%BB%98%E8%B4%B9%E8%B4%A6%E5%8F%B7/%E8%B4%A7%E5%B8%81%E7%9A%84%E6%97%85%E7%A8%8B.svg" alt="过程大约是这么个样子" loading="lazy"></p>
+<h2 id="绑定"><a href="#绑定" class="headerlink" title="绑定"></a>绑定</h2><p>到 OpenAI Platform 的 <a target="_blank" rel="noopener" href="https://platform.openai.com/account/billing/overview">Billing 界面</a>绑卡，但 OpenAI 的风控不停升级，很多 IP 即使没有被直接禁止访问，也无法成功绑卡，因此最好首先在这个 <a target="_blank" rel="noopener" href="https://scamalytics.com/ip">IP 风险检查网站</a>检查一下自己的代理 IP，风险在中等以上基本就不用尝试了。风险低又对人品有信心的人，可以尝试浏览器开无痕模式绑定，一次失败了就换 IP 再试，但连续失败四五次之后也不建议继续，避免使自己的账号或卡本身被风控。在这种情况下可以加入 <a target="_blank" rel="noopener" href="https://t.me/depay_visa">Depay 官方的 Telegram 群</a>，群里有一些官方背书提供收费代绑定服务的人，右上角有 title“500U押金”，可以私聊他们详谈。</p>
+<p>绑好之后，还是在 Billing 界面中设置好使用限额，并时常关注已用金额和卡内余额，避免因为余额不足导致付款失败，然后在 API Keys 界面按需生成 key 并保存，就可以尽情使用了！这里推荐几个我关注的应用：</p>
+<p>一键搭建自己的 ChatGPT 网页：<a target="_blank" rel="noopener" href="https://github.com/Yidadaa/ChatGPT-Next-Web">https://github.com/Yidadaa/ChatGPT-Next-Web</a></p>
+<p>翻译并输出双语电子书：<a target="_blank" rel="noopener" href="https://blog.amamiyayuuko.com/p/use-chatgpt-for-translation">https://blog.amamiyayuuko.com/p/use-chatgpt-for-translation</a></p>
+<p>周报生成器：<a target="_blank" rel="noopener" href="https://weeklyreport.avemaria.fun/zh">https://weeklyreport.avemaria.fun/zh</a></p>
+<p>总结 YouTube 视频内容，还可以向细节提问：<a target="_blank" rel="noopener" href="https://chatyoutube.com/">https://chatyoutube.com</a></p>
+<p>总结 Bilibili&#x2F;YouTube 视频内容，不过不能提问：<a target="_blank" rel="noopener" href="https://b.jimmylv.cn/">https://b.jimmylv.cn</a></p>
+<p>划词翻译、润色和总结：<a target="_blank" rel="noopener" href="https://github.com/yetone/openai-translator">https://github.com/yetone/openai-translator</a></p>
+</div><div class="article-licensing box"><div class="licensing-title"><p>用虚拟卡绑定 OpenAI 付费账号</p><p><a href="https://yizhimengxin.me/2023/04/01/用虚拟卡绑定OpenAI付费账号/">https://yizhimengxin.me/2023/04/01/用虚拟卡绑定OpenAI付费账号/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>河干鱼两</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2023-04-01</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2023-04-06</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><i class="icon fab fa-creative-commons-by"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/%E6%95%99%E7%A8%8B/">教程</a><a class="link-muted mr-2" rel="tag" href="/tags/%E7%BD%91%E7%BB%9C/">网络</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2023/04/08/%E6%9C%80%E8%BF%91%E5%B9%B2%E4%BA%86%E4%BA%9B%E5%95%A5/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">最近干了些啥</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2023/01/17/%EF%BC%88%E8%8A%82%E9%80%89%EF%BC%89%E7%94%B5%E5%AD%90%E4%B9%A6%E4%B8%80%E9%94%AE%E6%91%86%E7%83%82ABC%E2%80%94%E2%80%94%E5%86%99%E5%9C%A8zlib%E8%A2%AB%E8%B5%84%E4%BA%A7%E9%98%B6%E7%BA%A7%E9%93%81%E6%8B%B3%E5%B9%B2%E7%83%82%E4%B9%8B%E9%99%85/"><span class="level-item">（节选）电子书一键摆烂 ABC——写在 zlib 被资产阶级铁拳干烂之际</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card" id="comments"><div class="card-content"><h3 class="title is-5">评论</h3><div class="content" id="waline-thread"></div><link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/waline/2.6.3/waline.css"><script src="https://s4.zstatic.net/ajax/libs/waline/2.6.3/waline.js"></script><script>Waline.init({
+            el: '#waline-thread',
+            serverURL: "https://mxcomment.yizhimengxin.me/",
+            path: window.location.pathname,
+            lang: "zh-CN",
+            locale: {"placeholder":"说点什么？（留下邮箱可以收到回复提醒）","sofa":"欢迎评论"},
+            emoji: ["https://cdn.cbd.int/@waline/emojis@1.2.0/tw-emoji"],
+            
+            meta: ["nick","mail","link"],
+            requiredMeta: [],
+            login: "disable",
+            
+            pageSize: 10,
+            imageUploader: false,
+            highlighter: false,
+            texRenderer: false,
+            search: false,
+            pageview: false,
+            comment: false,
+            copyright: true,
+        });</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1 is-sticky"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar.webp" alt="河干鱼两"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">河干鱼两</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>上海</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives/"><p class="title">57</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories/"><p class="title">5</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags/"><p class="title">20</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://t.me/gibberish0" target="_blank" rel="me noopener">关注我</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Mail" href="mailto:admin@yizhimengxin.me"><i class="fas fa-envelope"></i></a></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#注册-Depay-账号"><span class="level-left"><span class="level-item">1</span><span class="level-item">注册 Depay 账号</span></span></a></li><li><a class="level is-mobile" href="#开卡和充值"><span class="level-left"><span class="level-item">2</span><span class="level-item">开卡和充值</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#选择什么卡"><span class="level-left"><span class="level-item">2.1</span><span class="level-item">选择什么卡</span></span></a></li><li><a class="level is-mobile" href="#买，提，兑，充"><span class="level-left"><span class="level-item">2.2</span><span class="level-item">买，提，兑，充</span></span></a></li></ul></li><li><a class="level is-mobile" href="#绑定"><span class="level-left"><span class="level-item">3</span><span class="level-item">绑定</span></span></a></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">follow.it</h3><form action="https://api.follow.it/subscription-form/bjc3M0NtelFwN0tTbnhqNFhtWkRnMk8yWW93ODNNWkNEdHNQV1ZOU1NTQzdQYVdHMEdMY0Z3RXJMbXFSS1c4M0R0bFJMTkZoMVlNU2NSS29RbXJHazVWNWtTQnNQYXpTK1ZyOW54YUV4TVVaNkxNWWpDQXRZNXpxODFLK0Z3cFp8UEljZDE3LzVxSUJEZGxLaGlOemNlalZFMGlueGJPNERDYmpxMWZXc0ZScz0=/8" method="post" target="_blank"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="订阅"></div></div></form></div></div></div><div class="column-right-shadow is-hidden-widescreen"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3"><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2025-01-31T16:22:00.000Z">2025-02-01</time></p><p class="title"><a href="/2025/02/01/%E5%88%86%E4%BA%AB%E4%B8%A4%E9%83%A8%E8%87%AA%E5%B7%B1%E6%A0%A1%E5%AF%B9%E5%AD%97%E5%B9%95%E7%9A%84%E7%94%B5%E5%BD%B1/">分享两部自己校对字幕的电影</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-06-30T13:55:00.000Z">2024-06-30</time></p><p class="title"><a href="/2024/06/30/%E8%B4%A8%E9%87%8F%E6%95%88%E5%BA%94%E6%BC%AB%E7%94%BB%E5%92%8C%E7%94%B5%E5%BD%B1/">质量效应漫画和电影</a></p><p class="categories"><a href="/categories/%E5%88%86%E4%BA%AB/">分享</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-01-16T15:26:36.000Z">2024-01-16</time></p><p class="title"><a href="/2024/01/16/Netflix%E8%BD%AC%E5%8C%BA%E5%8F%AF%E7%94%A8%E7%9A%84%E5%85%A8%E7%90%83%E5%B9%B2%E5%87%80IP%E5%92%8C%E6%B5%8F%E8%A7%88%E5%99%A8/">Netflix 转区可用的全球干净 IP 和浏览器</a></p><p class="categories"><a href="/categories/%E6%90%9E%E6%9C%BA/">搞机</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2023-11-08T09:58:07.000Z">2023-11-08</time></p><p class="title"><a href="/2023/11/08/%E5%85%B3%E4%BA%8E%E3%80%8A%E5%B7%AB%E5%B8%883-%E8%A1%80%E4%B8%8E%E9%85%92%E3%80%8B%E4%B8%8D%E5%90%8C%E7%BB%93%E5%B1%80%E7%9A%84%E4%B8%80%E4%BA%9B%E7%9C%8B%E6%B3%95/">关于《巫师 3 - 血与酒》不同结局的一些看法</a></p><p class="categories"><a href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2023-04-07T16:00:00.000Z">2023-04-08</time></p><p class="title"><a href="/2023/04/08/%E6%9C%80%E8%BF%91%E5%B9%B2%E4%BA%86%E4%BA%9B%E5%95%A5/">最近干了些啥</a></p><p class="categories"><a href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a></p></div></article></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/%E5%88%86%E4%BA%AB/"><span class="level-start"><span class="level-item">分享</span></span><span class="level-end"><span class="level-item tag">18</span></span></a></li><li><a class="level is-mobile" href="/categories/%E6%8A%95%E7%A8%BF/"><span class="level-start"><span class="level-item">投稿</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E6%90%9E%E6%9C%BA/"><span class="level-start"><span class="level-item">搞机</span></span><span class="level-end"><span class="level-item tag">17</span></span></a></li><li><a class="level is-mobile" href="/categories/%E6%9D%82%E8%B0%88/"><span class="level-start"><span class="level-item">杂谈</span></span><span class="level-end"><span class="level-item tag">17</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%BD%AC%E8%BD%BD/"><span class="level-start"><span class="level-item">转载</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/%E5%A8%B1%E4%B9%90/"><span class="tag">-娱乐</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Android/"><span class="tag">Android</span><span class="tag">7</span></a></div><div class="control"><a class="tags has-addons" href="/tags/App/"><span class="tag">App</span><span class="tag">7</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Netflix/"><span class="tag">Netflix</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/PC/"><span class="tag">PC</span><span class="tag">9</span></a></div><div class="control"><a class="tags has-addons" href="/tags/SIM/"><span class="tag">SIM</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Telegram/"><span class="tag">Telegram</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/VPS/"><span class="tag">VPS</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/web/"><span class="tag">web</span><span class="tag">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%8D%9A%E5%AE%A2/"><span class="tag">博客</span><span class="tag">9</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%8D%9A%E7%89%A9%E9%A6%86/"><span class="tag">博物馆</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%A4%A9%E6%96%87/"><span class="tag">天文</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%A8%B1%E4%B9%90/"><span class="tag">娱乐</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%95%99%E7%A8%8B/"><span class="tag">教程</span><span class="tag">10</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%97%85%E8%A1%8C/"><span class="tag">旅行</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%B8%B8%E6%88%8F/"><span class="tag">游戏</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%BD%91%E7%BB%9C/"><span class="tag">网络</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%BE%8A%E6%AF%9B/"><span class="tag">羊毛</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E8%BD%AF%E4%BB%B6/"><span class="tag">软件</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E9%9F%B3%E4%B9%90/"><span class="tag">音乐</span><span class="tag">1</span></a></div></div></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.svg" alt="一只萌新" height="28"></a><p class="is-size-7"><span>&copy; 2025 河干鱼两</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p><p class="is-size-7">© 2019</p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><i class="fab fa-creative-commons-by"></i></a></p></div></div></div></div></footer><script src="https://s4.zstatic.net/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script src="https://s4.zstatic.net/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script><script src="https://s4.zstatic.net/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script data-pjax src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script data-pjax src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://s4.zstatic.net/ajax/libs/cookieconsent/3.1.1/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://s4.zstatic.net/ajax/libs/lightgallery/1.10.0/js/lightgallery.min.js" defer></script><script src="https://s4.zstatic.net/ajax/libs/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><script src="https://s4.zstatic.net/ajax/libs/pjax/0.2.8/pjax.min.js"></script><script src="/js/pjax.js"></script><!--!--><!--!--><!--!--><script data-pjax src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script data-pjax src="/js/insight.js" defer></script><script data-pjax>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
