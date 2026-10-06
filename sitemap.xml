@@ -565,14 +565,14 @@
   </url>
   
   <url>
-    <loc>https://wanderlust.im/tags/PC/</loc>
+    <loc>https://wanderlust.im/tags/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://wanderlust.im/tags/%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://wanderlust.im/tags/PC/</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -614,7 +614,14 @@
   </url>
   
   <url>
-    <loc>https://wanderlust.im/tags/Telegram/</loc>
+    <loc>https://wanderlust.im/tags/%E8%BD%AF%E4%BB%B6/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://wanderlust.im/tags/%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -635,14 +642,7 @@
   </url>
   
   <url>
-    <loc>https://wanderlust.im/tags/%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2026-10-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://wanderlust.im/tags/%E8%BD%AF%E4%BB%B6/</loc>
+    <loc>https://wanderlust.im/tags/Telegram/</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
